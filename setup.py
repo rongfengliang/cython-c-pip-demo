@@ -29,10 +29,10 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     project_urls={
-        'Documentation': 'https://github.com/rongfengliang/click-cli-demo.git',
-        'Say Thanks!': 'https://github.com/rongfengliang/click-cli-demo.git',
-        'Source': 'https://github.com/rongfengliang/click-cli-demo.git',
-        'Tracker': 'https://github.com/rongfengliang/click-cli-demo.git',
+        'Documentation': 'https://github.com/rongfengliang/cython-c-pip-demo.git',
+        'Say Thanks!': 'https://github.com/rongfengliang/cython-c-pip-demo.git',
+        'Source': 'https://github.com/rongfengliang/cython-c-pip-demo.git',
+        'Tracker': 'https://github.com/rongfengliang/cython-c-pip-demo.git',
     },
     entry_points={
         'console_scripts': [
