@@ -3,3 +3,5 @@ include/**
 bin/**
 lib/**
 .idea/**
+ext/add.o
+ext/libadd.a
