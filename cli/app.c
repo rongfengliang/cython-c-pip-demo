@@ -7,7 +7,7 @@
             "ext/add.h"
         ],
         "include_dirs": [
-            "./cli",
+            "cli",
             "ext"
         ],
         "libraries": [
@@ -18,7 +18,7 @@
         ],
         "name": "add_app",
         "sources": [
-            "./cli/app.pyx"
+            "cli/app.pyx"
         ]
     },
     "module_name": "add_app"

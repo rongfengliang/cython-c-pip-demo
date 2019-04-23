@@ -5,3 +5,6 @@ lib/**
 .idea/**
 ext/add.o
 ext/libadd.a
+dalongrong_cythoncli.egg-info
+dist/**
+add_app.cpython-37m-darwin.so
