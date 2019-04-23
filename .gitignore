@@ -10,3 +10,4 @@ dist/**
 add_app.cpython-37m-darwin.so
 cli/__pycache__/
 cli/app.c
+build/**

@@ -25,7 +25,7 @@ class build_ext_Library(distutils_build_ext.build_ext):
         distutils_build_ext.build_ext.run(self)
 setuptools.setup(
     name="dalongrong_cythoncli",
-    version="0.0.13",
+    version="0.0.14",
     author="dalongrong",
     package_data={
         'cli': ['*.pyx',"ext/add.c","ext/add.h","ext/Makefile"]
