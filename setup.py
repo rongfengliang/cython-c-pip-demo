@@ -14,12 +14,12 @@ add_extension = Extension(
     name="add_app",
     sources=["cli/app.pyx"],
     libraries=["add"],
-    library_dirs=["ext"],
-    include_dirs=["ext"]
+    library_dirs=["cli/ext"],
+    include_dirs=["cli/ext"]
 )
 class build_ext_Library(distutils_build_ext.build_ext):
     def run(self):
-        command = "cd ext && make"
+        command = "cd cli/ext && make"
         process = subprocess.Popen(command, shell=True)
         process.wait()
         distutils_build_ext.build_ext.run(self)
@@ -28,8 +28,7 @@ setuptools.setup(
     version="0.0.13",
     author="dalongrong",
     package_data={
-        'cli': ['*.pyx'],
-        'ext':['add.h',"add.c","Makefile"]
+        'cli': ['*.pyx',"ext/add.c","ext/add.h","ext/Makefile"]
     },    
     author_email="1141591465@qq.com",
     description="a simple cli project",
@@ -38,7 +37,7 @@ setuptools.setup(
     ext_modules= cythonize([add_extension]),
     long_description_content_type="text/markdown",
     packages = [
-        "cli","ext"
+        "cli"
     ],
     cmdclass ={
          "build_ext":build_ext_Library
