@@ -8,3 +8,5 @@ ext/libadd.a
 dalongrong_cythoncli.egg-info
 dist/**
 add_app.cpython-37m-darwin.so
+cli/__pycache__/
+cli/app.c
